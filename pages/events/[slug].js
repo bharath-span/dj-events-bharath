@@ -49,7 +49,7 @@ export async function getServerSideProps({query: {slug}}){
 }
 
 
-function Event({evt}) {
+const Event = ({evt}) => {
     const router = useRouter();
 
     const deleteEvent = async (e) => {

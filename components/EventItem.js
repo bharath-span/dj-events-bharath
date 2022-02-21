@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/EventItem.module.css';
 
-function EventItem({evt}) {
+const EventItem = ({evt}) => {
   return (
     <div className={styles.event}>
         <div className={styles.img}>
