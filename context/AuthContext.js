@@ -70,7 +70,7 @@ export const AuthProvider = ({children}) => {
     
         if (res.ok) {
             setUser(null)
-            router.push('/account/login')
+            router.push('/')
         }
     }
 

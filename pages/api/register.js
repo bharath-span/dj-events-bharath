@@ -1,7 +1,7 @@
 import cookie from 'cookie'
 import { API_URL } from '../../config/index'
 
-export default register = async (req, res) => {
+const register = async (req, res) => {
   if (req.method === 'POST') {
     const { username, email, password } = req.body
 
@@ -48,3 +48,5 @@ export default register = async (req, res) => {
     res.status(405).json({ message: `Method ${req.method} not allowed` })
   }
 }
+
+export default register;
