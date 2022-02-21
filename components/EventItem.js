@@ -7,7 +7,7 @@ const EventItem = ({evt}) => {
   return (
     <div className={styles.event}>
         <div className={styles.img}>
-            <Image src={evt.img} width={170} height={100} />
+            <Image src={evt.img} width={170} height={100} alt={evt.name} />
         </div>
 
         <div className={styles.info}>

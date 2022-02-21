@@ -7,7 +7,7 @@ import Layout from '../../components/Layout'
 import AuthContext from '../../context/AuthContext'
 import styles from '../../styles/AuthForm.module.css'
 
-export default function LoginPage() {
+const LoginPage = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -52,9 +52,11 @@ export default function LoginPage() {
         </form>
 
         <p>
-          Don't have an account? <Link href='/account/register'>Register</Link>
+          Don{`'`}t have an account? <Link href='/account/register'>Register</Link>
         </p>
       </div>
     </Layout>
   )
 }
+
+export default LoginPage

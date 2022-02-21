@@ -91,7 +91,7 @@ const Event = ({evt}) => {
           <ToastContainer />
           {evt.img && (
             <div className={styles.image}>
-              <Image src={evt.img} width={960} height={600} />
+              <Image src={evt.img} width={960} height={600} alt={evt.name}/>
             </div>
           )}
 
